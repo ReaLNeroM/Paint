@@ -17,12 +17,12 @@ document.onmouseup = function(){
 }
 
 document.onmousemove = function(e){
-    if(mouse_clicked && cursorX != -1 && cursorY != -1){
-        ctx.beginPath();
-        ctx.moveTo(cursorX, cursorY);
-        ctx.lineTo(e.pageX, e.pageY);
-        ctx.stroke();
-    }
-    cursorX = e.pageX;
-    cursorY = e.pageY;
+	if(mouse_clicked && cursorX != -1 && cursorY != -1){
+		ctx.beginPath();
+		ctx.moveTo(cursorX, cursorY);
+		ctx.lineTo(e.pageX, e.pageY);
+		ctx.stroke();
+	}
+	cursorX = e.pageX;
+	cursorY = e.pageY;
 };
