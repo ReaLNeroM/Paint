@@ -23,6 +23,7 @@ document.onmousemove = function(e){
 		ctx.lineTo(e.pageX, e.pageY);
 		ctx.stroke();
 	}
+	
 	cursorX = e.pageX;
 	cursorY = e.pageY;
 };
